@@ -25,7 +25,11 @@ export class AppComponent {
       title: 'Users',
       url: '/users',
       icon: 'people'
-    }
+    },
+    { title: 'Articles',
+      url: '/articles', 
+      icon: 'newspaper'
+    },
   ]; 
   //  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
