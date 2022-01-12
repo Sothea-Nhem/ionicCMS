@@ -34,6 +34,22 @@ const routes: Routes = [
   {
     path: 'user-edit/:userId',
     loadChildren: () => import('./user-edit/user-edit.module').then( m => m.UserEditPageModule)
+  },
+  {
+    path: 'articles',
+    loadChildren: () => import('./articles/articles.module').then( m => m.ArticlesPageModule)
+  },
+  {
+    path: 'article',
+    loadChildren: () => import('./article/article.module').then( m => m.ArticlePageModule)
+  },
+  {
+    path: 'article-edit',
+    loadChildren: () => import('./article-edit/article-edit.module').then( m => m.ArticleEditPageModule)
+  },
+  {
+    path: 'article-create',
+    loadChildren: () => import('./article-create/article-create.module').then( m => m.ArticleCreatePageModule)
   }
 ];
 
